@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
 
-  nodes       = (ENV['NODES'] || 2).to_i
+  nodes       = (ENV['NODES'] || 4).to_i
   node_size   = (ENV['SIZE']  || 512).to_i
   bucket_size = (node_size * 0.7).to_i # 80% is recommended by couchbase, 70% to be safe.
 
